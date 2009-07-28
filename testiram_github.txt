@@ -8,3 +8,5 @@ git push origin master
 to mogoče ni najbolj učinkovita metoda, ampak to je to kar znam zaenkrat :)
 
 itak da ne. Ker obstaja syssGIT al kaj je ze, ki ima lep GUI. 
+
+Se pa sprasujem, ce se da tale GIT integrirat v Zend? http://git.or.cz/gitwiki/GitSvnComparsion pravi, da je SVN bolj razsirjen kot git in zato je vec orodij, ki ga podpirajo, including Zend. Grem mal pogledat
