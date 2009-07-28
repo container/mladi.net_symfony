@@ -6,3 +6,5 @@ git commit -m 'moj message'
 git push origin master
 
 to mogoče ni najbolj učinkovita metoda, ampak to je to kar znam zaenkrat :)
+
+itak da ne. Ker obstaja syssGIT al kaj je ze, ki ima lep GUI. 
