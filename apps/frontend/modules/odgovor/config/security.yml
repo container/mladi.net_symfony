@@ -1,0 +1,4 @@
+update:
+  is_secure: on
+default:
+  is_secure: off

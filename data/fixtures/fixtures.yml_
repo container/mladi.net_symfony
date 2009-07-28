@@ -1,0 +1,200 @@
+sfGuardGroup:
+  sfGuardGroup_1:
+    name: admin
+    description: 'Administrator group'
+sfGuardPermission:
+  sfGuardPermission_1:
+    name: admin
+    description: 'Administrator permission'
+sfGuardGroupPermission:
+  sfGuardGroupPermission_1_1:
+    group_id: sfGuardGroup_1
+    permission_id: sfGuardPermission_1
+sfGuardUser:
+  sfGuardUser_1:
+    username: admin
+    algorithm: sha1
+    salt: b2cf93edfd90bbad002ff1a0a5d1e841
+    password: d6e1f42bae153d5ccac3e5ada9f75fbfa601e505
+    created_at: '2009-01-25 21:29:05'
+    is_active: '1'
+    is_super_admin: '1'
+sfGuardUserGroup:
+  sfGuardUserGroup_1_1:
+    user_id: sfGuardUser_1
+    group_id: sfGuardGroup_1
+BlogPost:
+  BlogPost_2:
+    title: 'blog title'
+    excerpt: 'thi is excerpt'
+    body: 'thi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerpt'
+  BlogPost_3:
+    title: 'not my fault'
+    excerpt: 'thi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerpt'
+    body: 'thi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerpt'
+BlogComment:
+  BlogComment_1:
+    blog_post_id: BlogPost_2
+    author: av
+    body: 'thi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerpt'
+  BlogComment_2:
+    blog_post_id: BlogPost_3
+    author: tav
+    body: 'thi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerptthi is excerpt'
+Category:
+  Category_5:
+    naslov: kat1
+    text: testis
+  Category_6:
+    naslov: kat2
+    text: 'testiš šestis dva'
+Vprasanje:
+  Vprasanje_1:
+    naslov: 'a je to res'
+    text: 'to pa?'
+    nickname: lezba
+    created_at: '2008-04-03 02:06:00'
+  Vprasanje_2:
+    naslov: 'kaj mi raste na glavi'
+    text: 'je to rog?'
+    nickname: rok
+    created_at: '2007-01-03 04:03:00'
+  Vprasanje_3:
+    naslov: 'moje prašanje je lepo'
+    text: 'kaj kaj kaj kaj kaj '
+    nickname: 'nick - name'
+    created_at: '2009-01-25 22:32:04'
+  Vprasanje_4:
+    naslov: 'lepo spi'
+    text: 'sej bom!'
+    nickname: majkemi_
+    created_at: '2009-01-26 03:43:00'
+  Vprasanje_5:
+    naslov: test
+    text: šest
+    nickname: mojniknejem
+    created_at: '2009-01-26 03:45:00'
+  Vprasanje_6:
+    naslov: 'to je en naslov'
+    text: 'to je en text'
+    nickname: moje_ime
+    created_at: '2009-03-03 01:10:00'
+  Vprasanje_8:
+    naslov: sdc
+    text: dcs
+    nickname: sc
+    created_at: '2009-02-02 01:20:07'
+  Vprasanje_9:
+    naslov: testtest6
+    text: advfpoj
+    nickname: davpoj
+    created_at: '2009-02-02 01:22:09'
+  Vprasanje_12:
+    naslov: 'to je eno prašanje krtko'
+    text: 'kva težiš mudel a te RAZBIJEM???'
+    nickname: mu?enec
+    created_at: '2004-01-01 00:00:00'
+  Vprasanje_13:
+    naslov: aaaaaaslov
+    text: eeeeeeeeext
+    nickname: cknaaaaaaaem
+    created_at: '2004-01-01 00:00:00'
+Svetovalec:
+  Svetovalec_1:
+    nickname: joze
+    name: joze
+  Svetovalec_2:
+    nickname: maricka
+    name: maricka
+Odgovor:
+  Odgovor_1:
+    vprasanje_id: Vprasanje_1
+    svetovalec_id: Svetovalec_1
+    naslov: 'to ni ni?'
+    text: 'kaj pa gledaš po glavi'
+  Odgovor_2:
+    vprasanje_id: Vprasanje_2
+    svetovalec_id: Svetovalec_2
+    naslov: 'ne ni res, nikoli ne boš lepa'
+    text: 'tvoja misel je strupena'
+SvetovalecCategory:
+  SvetovalecCategory_1_5:
+    svetovalec: Svetovalec_1
+    category: Category_5
+  SvetovalecCategory_2_6:
+    svetovalec: Svetovalec_2
+    category: Category_6
+Tags:
+  Tags_amater_1:
+    name: amater
+    vprasanje_id: Vprasanje_1
+  Tags_rog_1:
+    name: rog
+    vprasanje_id: Vprasanje_1
+  Tags_materjal_2:
+    name: materjal
+    vprasanje_id: Vprasanje_2
+  Tags_zimbabve_2:
+    name: zimbabve
+    vprasanje_id: Vprasanje_2
+  'Tags_ beda_8':
+    name: ' beda'
+    vprasanje_id: Vprasanje_8
+  Tags_asd_8:
+    name: asd
+    vprasanje_id: Vprasanje_8
+  'Tags_ tag2_9':
+    name: ' tag2'
+    vprasanje_id: Vprasanje_9
+  Tags_tags_9:
+    name: tags
+    vprasanje_id: Vprasanje_9
+  'Tags_ armagedon_12':
+    name: ' armagedon'
+    vprasanje_id: Vprasanje_12
+  'Tags_ rizba_12':
+    name: ' rizba'
+    vprasanje_id: Vprasanje_12
+  'Tags_ samuraj_12':
+    name: ' samuraj'
+    vprasanje_id: Vprasanje_12
+  Tags_mu?enec_12:
+    name: mu?enec
+    vprasanje_id: Vprasanje_12
+  'Tags_ gags_13':
+    name: ' gags'
+    vprasanje_id: Vprasanje_13
+  'Tags_ taks_13':
+    name: ' taks'
+    vprasanje_id: Vprasanje_13
+  Tags_taks_13:
+    name: taks
+    vprasanje_id: Vprasanje_13
+VprasanjeCategory:
+  VprasanjeCategory_1_5:
+    vprasanje: Vprasanje_1
+    category: Category_5
+  VprasanjeCategory_3_5:
+    vprasanje: Vprasanje_3
+    category: Category_5
+  VprasanjeCategory_4_5:
+    vprasanje: Vprasanje_4
+    category: Category_5
+  VprasanjeCategory_6_5:
+    vprasanje: Vprasanje_6
+    category: Category_5
+  VprasanjeCategory_8_5:
+    vprasanje: Vprasanje_8
+    category: Category_5
+  VprasanjeCategory_9_5:
+    vprasanje: Vprasanje_9
+    category: Category_5
+  VprasanjeCategory_12_5:
+    vprasanje: Vprasanje_12
+    category: Category_5
+  VprasanjeCategory_13_5:
+    vprasanje: Vprasanje_13
+    category: Category_5
+  VprasanjeCategory_2_6:
+    vprasanje: Vprasanje_2
+    category: Category_6

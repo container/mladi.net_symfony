@@ -1,0 +1,2443 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class EasySwift</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class EasySwift</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">EasySwift: Facade for Swift Mailer Version 3.</p>
+<p class="description"><p>Provides (most of) the API from older versions of Swift, wrapped around the new version 3 API.  Due to the popularity of the new API, EasySwift will not be around indefinitely.</p></p>
+	<ul class="tags">
+				<li><span class="field">deprecated:</span> </li>
+				<li><span class="field">author:</span> Chris Corbyn &lt;<a href="mailto:chris@w3style.co.uk">chris@w3style.co.uk</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_EasySwift.php.html">/EasySwift.php</a> (line <span class="field">32</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																																																								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$attachmentIds" title="details" class="var-name">$attachmentIds</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$autoFlush" title="details" class="var-name">$autoFlush</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$errors" title="details" class="var-name">$errors</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$exactCopy" title="details" class="var-name">$exactCopy</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$failed" title="details" class="var-name">$failed</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$lastError" title="details" class="var-name">$lastError</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$lastResponse" title="details" class="var-name">$lastResponse</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>
+					<a href="#$message" title="details" class="var-name">$message</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$partIds" title="details" class="var-name">$partIds</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$pluginCount" title="details" class="var-name">$pluginCount</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../Swift/Swift_RecipientList.html">Swift_RecipientList</a></span>
+					<a href="#$recipients" title="details" class="var-name">$recipients</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$responseCode" title="details" class="var-name">$responseCode</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+					<a href="#$swift" title="details" class="var-name">$swift</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">EasySwift</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$connection</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#addAttachment" title="details" class="method-name">addAttachment</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/octet-stream&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#addBcc" title="details" class="method-name">addBcc</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#addCc" title="details" class="method-name">addCc</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addHeaders" title="details" class="method-name">addHeaders</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#addImage" title="details" class="method-name">addImage</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$input</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addPart" title="details" class="method-name">addPart</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$body</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;text/plain&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#addRecipients" title="details" class="method-name">addRecipients</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#addTo" title="details" class="method-name">addTo</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#authenticate" title="details" class="method-name">authenticate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#autoFlush" title="details" class="method-name">autoFlush</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flush</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#close" title="details" class="method-name">close</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#command" title="details" class="method-name">command</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$command</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#connect" title="details" class="method-name">connect</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#dumpLog" title="details" class="method-name">dumpLog</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#embedFile" title="details" class="method-name">embedFile</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/octet-stream&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cid</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flush" title="details" class="method-name">flush</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#flushAttachments" title="details" class="method-name">flushAttachments</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushBcc" title="details" class="method-name">flushBcc</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushCc" title="details" class="method-name">flushCc</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushErrors" title="details" class="method-name">flushErrors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushHeaders" title="details" class="method-name">flushHeaders</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#flushParts" title="details" class="method-name">flushParts</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushTo" title="details" class="method-name">flushTo</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getBccAddresses" title="details" class="method-name">getBccAddresses</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getCcAddresses" title="details" class="method-name">getCcAddresses</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getCharset" title="details" class="method-name">getCharset</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getErrors" title="details" class="method-name">getErrors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getFailedRecipients" title="details" class="method-name">getFailedRecipients</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getLastError" title="details" class="method-name">getLastError</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getMimeWarning" title="details" class="method-name">getMimeWarning</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Swift_Events/Swift_Events_Listener.html">Swift_Events_Listener</a></span>
+										<a href="#getPlugin" title="details" class="method-name">getPlugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getReplyTo" title="details" class="method-name">getReplyTo</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getReturnPath" title="details" class="method-name">getReturnPath</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getToAddresses" title="details" class="method-name">getToAddresses</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getTransactions" title="details" class="method-name">getTransactions</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#handshake" title="details" class="method-name">handshake</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#hasFailed" title="details" class="method-name">hasFailed</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isConnected" title="details" class="method-name">isConnected</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadAuthenticator" title="details" class="method-name">loadAuthenticator</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$auth</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#loadPlugin" title="details" class="method-name">loadPlugin</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$plugin</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#newMessage" title="details" class="method-name">newMessage</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$msg</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#newRecipientList" title="details" class="method-name">newRecipientList</a>
+											([<span class="var-type"></span>&nbsp;<span class="var-name">$list</span> = <span class="var-default">false</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#removePlugin" title="details" class="method-name">removePlugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#requestReadReceipt" title="details" class="method-name">requestReadReceipt</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$request</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#send" title="details" class="method-name">send</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$from</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$subject</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$body</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#setCharset" title="details" class="method-name">setCharset</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setError" title="details" class="method-name">setError</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHeader" title="details" class="method-name">setHeader</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHeaderAttribute" title="details" class="method-name">setHeaderAttribute</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$attribute</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setHeaderEncoding" title="details" class="method-name">setHeaderEncoding</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">&quot;B&quot;</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMaxLogSize" title="details" class="method-name">setMaxLogSize</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMimeWarning" title="details" class="method-name">setMimeWarning</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPriority" title="details" class="method-name">setPriority</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$priority</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setReplyTo" title="details" class="method-name">setReplyTo</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setReturnPath" title="details" class="method-name">setReturnPath</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Swift/Swift_Address.html">Swift_Address</a></span>
+										<a href="#stringToAddress" title="details" class="method-name">stringToAddress</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$string</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#useAutoLineResizing" title="details" class="method-name">useAutoLineResizing</a>
+											([<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span> = <span class="var-default">1000</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#useExactCopy" title="details" class="method-name">useExactCopy</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#useLogging" title="details" class="method-name">useLogging</a>
+											([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$use</span> = <span class="var-default">true</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$attachmentIds" id="$attachmentIds"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$attachmentIds</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">79</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A list of all the IDs of the attachments add to the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$autoFlush" id="$autoFlush"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$autoFlush</span>
+			 = <span class="var-default"> true</span>			(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">If EasySwift should get rid of the message and recipients once it's done sending</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errors" id="$errors"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$errors</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">94</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The list of errors handled at runtime</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$exactCopy" id="$exactCopy"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$exactCopy</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">If all recipients should get the same copy of the message, including headers</p>
+<p class="description"><p>This is already implied if any Cc or Bcc recipients are set</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$failed" id="$failed"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$failed</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This value becomes set to true when Swift fails</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$lastError" id="$lastError"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$lastError</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">99</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The last error received</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$lastResponse" id="$lastResponse"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$lastResponse</span>
+			 = <span class="var-default"> &quot;&quot;</span>			(line <span class="line-number">84</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The last response received from the server</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$message" id="$message"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>
+			<span class="var-name">$message</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">53</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">An instance of Swift_Message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$partIds" id="$partIds"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$partIds</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A list of the IDs of all parts added to the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$pluginCount" id="$pluginCount"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$pluginCount</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">48</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of loaded plugins</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$recipients" id="$recipients"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../Swift/Swift_RecipientList.html">Swift_RecipientList</a></span>
+			<span class="var-name">$recipients</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">58</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">An address list to send to (Cc, Bcc, To..)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$responseCode" id="$responseCode"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$responseCode</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">89</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The 3 digit code in the last response received from the server</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$swift" id="$swift"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+			<span class="var-name">$swift</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The instance of Swift this class wrappers</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">106</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">EasySwift</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$connection</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$domain</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Connection/Swift_Connection.html">Swift_Connection</a></span>
+				<span class="var-name">$connection</span><span class="var-description">: The connection to use</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$domain</span><span class="var-description">: The domain name of this server (not the SMTP server)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddAttachment" id="addAttachment"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addAttachment</span> (line <span class="line-number">739</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a new attachment to the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			addAttachment
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/octet-stream&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$data</span><span class="var-description">: The attachment to add.  If this is a string it's used as the file contents.  If it's an instance of Swift_Message_Attachment it's used as the entire part.  If it's an instance of Swift_File it's used as the contents.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: Filename, optional</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Content-type. Default application/octet-stream</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encoding</span><span class="var-description">: The encoding used (default is base64)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddBcc" id="addBcc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addBcc</span> (line <span class="line-number">583</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Bcc: recipients to the email</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			addBcc
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: Bcc address(es)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddCc" id="addCc"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addCc</span> (line <span class="line-number">558</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add Cc: recipients to the email</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			addCc
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: Cc address(es)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddHeaders" id="addHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addHeaders</span> (line <span class="line-number">859</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add headers to the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addHeaders
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$string</span><span class="var-description">: The message headers to append, separated by CRLF</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddImage" id="addImage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addImage</span> (line <span class="line-number">770</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Embed an image into the message and get the src attribute for HTML</p>
+<p class="description"><p>Returns FALSE on failure</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			addImage
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$input</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$input</span><span class="var-description">: The path to the image, a Swift_Message_Image object or a Swift_File object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddPart" id="addPart"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addPart</span> (line <span class="line-number">710</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a new MIME part to the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addPart
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$body</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;text/plain&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$encoding</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$body</span><span class="var-description">: The part to add.  If this is a string it's used as the body.  If it's an instance of Swift_Message_Part it's used as the entire part</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Content-type, default text/plain</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$encoding</span><span class="var-description">: The encoding used (default is to let Swift decide)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: The charset to use (default is to let swift decide)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddRecipients" id="addRecipients"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addRecipients</span> (line <span class="line-number">609</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add recipients to the email</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			addRecipients
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: Address(es)</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Recipient type (To, Cc, Bcc)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddTo" id="addTo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addTo</span> (line <span class="line-number">533</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add To: recipients to the email</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			addTo
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: To address(es)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodauthenticate" id="authenticate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">authenticate</span> (line <span class="line-number">414</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Authenticate with SMTP authentication</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Exception If the wrong connection is used</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			authenticate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$username</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$password</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$username</span><span class="var-description">: The SMTP username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$password</span><span class="var-description">: The SMTP password</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodautoFlush" id="autoFlush"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">autoFlush</span> (line <span class="line-number">156</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turn automatic flsuhing on or off.</p>
+<p class="description"><p>This in ON by deault.  It removes the message and all parts after sending.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			autoFlush
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$flush</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$flush</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodclose" id="close"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">close</span> (line <span class="line-number">322</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Close the connection to the MTA</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			close
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodcommand" id="command"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">command</span> (line <span class="line-number">340</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send a command to Swift and get a response</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			command
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$command</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$command</span><span class="var-description">: The command to send (leave of CRLF)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodconnect" id="connect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">connect</span> (line <span class="line-number">297</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Connect to the MTA if not already connected</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			connect
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methoddumpLog" id="dumpLog"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">dumpLog</span> (line <span class="line-number">200</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Dump the contents of the log to the browser  The log contains some &amp;lt; and &amp;gt; characters so you may need to view source  Note that this method dumps data to the browser, it does NOT return anything.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			dumpLog
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodembedFile" id="embedFile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">embedFile</span> (line <span class="line-number">816</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Embed an inline file into the message, such as a Image or MIDI file</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			embedFile
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$data</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">&quot;application/octet-stream&quot;</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$filename</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$cid</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$data</span><span class="var-description">: The file contents, Swift_File object or Swift_Message_EmbeddedFile object</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The content-type of the file, optional</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$filename</span><span class="var-description">: The filename to use, optional</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$cid</span><span class="var-description">: the Content-ID to use, optional</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodflush" id="flush"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flush</span> (line <span class="line-number">650</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Flush message, recipients and headers</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flush
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushAttachments" id="flushAttachments"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushAttachments</span> (line <span class="line-number">246</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all attachments</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			flushAttachments
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushBcc" id="flushBcc"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushBcc</span> (line <span class="line-number">599</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all Bcc: recipients</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushBcc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushCc" id="flushCc"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushCc</span> (line <span class="line-number">574</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all Cc: recipients</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushCc
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushErrors" id="flushErrors"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushErrors</span> (line <span class="line-number">146</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear the current list of errors</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushErrors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushHeaders" id="flushHeaders"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushHeaders</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all message headers</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushHeaders
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushParts" id="flushParts"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushParts</span> (line <span class="line-number">227</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all message parts</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			flushParts
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodflushTo" id="flushTo"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushTo</span> (line <span class="line-number">549</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out all To: recipients</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushTo
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetBccAddresses" id="getBccAddresses"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getBccAddresses</span> (line <span class="line-number">592</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get an array of Bcc addresses</p>
+<p class="description"><p>This currently returns an array of Swift_Address objects and may be simplified to an array of strings in later versions</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getBccAddresses
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCcAddresses" id="getCcAddresses"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCcAddresses</span> (line <span class="line-number">567</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get an array of Cc addresses</p>
+<p class="description"><p>This currently returns an array of Swift_Address objects and may be simplified to an array of strings in later versions</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getCcAddresses
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetCharset" id="getCharset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getCharset</span> (line <span class="line-number">699</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the charset of the charset to use in the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getCharset
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetErrors" id="getErrors"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getErrors</span> (line <span class="line-number">131</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the full list of errors</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getErrors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetFailedRecipients" id="getFailedRecipients"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFailedRecipients</span> (line <span class="line-number">659</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a list of any addresses which have failed since instantiation</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getFailedRecipients
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetLastError" id="getLastError"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getLastError</span> (line <span class="line-number">139</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the last error that occured</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getLastError
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMimeWarning" id="getMimeWarning"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMimeWarning</span> (line <span class="line-number">676</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the currently set MIME warning (seen by old clients)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getMimeWarning
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPlugin" id="getPlugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPlugin</span> (line <span class="line-number">370</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get a reference to the plugin identified by $name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Swift_Events/Swift_Events_Listener.html">Swift_Events_Listener</a></span>
+		<span class="method-name">
+			getPlugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: the ID of the plugin</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetReplyTo" id="getReplyTo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getReplyTo</span> (line <span class="line-number">520</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the reply-to address(es) as an array of strings</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getReplyTo
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetReturnPath" id="getReturnPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getReturnPath</span> (line <span class="line-number">500</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the return-path address as a string</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getReturnPath
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetToAddresses" id="getToAddresses"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getToAddresses</span> (line <span class="line-number">542</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get an array of To addresses</p>
+<p class="description"><p>This currently returns an array of Swift_Address objects and may be simplified to an array of strings in later versions</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getToAddresses
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTransactions" id="getTransactions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTransactions</span> (line <span class="line-number">191</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Dump the log contents</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">deprecated:</span> </li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getTransactions
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhandshake" id="handshake"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">handshake</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Perform the SMTP greeting process (don't do this unless you understand why you're doing it)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			handshake
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodhasFailed" id="hasFailed"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasFailed</span> (line <span class="line-number">282</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if Swift has failed or not</p>
+<p class="description"><p>This facade stops processing if so</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			hasFailed
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisConnected" id="isConnected"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isConnected</span> (line <span class="line-number">290</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if the current connection is open or not</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isConnected
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodloadAuthenticator" id="loadAuthenticator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadAuthenticator</span> (line <span class="line-number">399</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Load in a new authentication mechanism for SMTP</p>
+<p class="description"><p>This needn't be called since Swift will locate any available in Swift/Authenticator/*.php</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Exception If the wrong connection is used</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadAuthenticator
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$auth</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Authenticator/Swift_Authenticator.html">Swift_Authenticator</a></span>
+				<span class="var-name">$auth</span><span class="var-description">: The authentication mechanism to load</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodloadPlugin" id="loadPlugin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadPlugin</span> (line <span class="line-number">358</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add a new plugin to respond to events</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The ID of the plugin</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			loadPlugin
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$plugin</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Events/Swift_Events_Listener.html">Swift_Events_Listener</a></span>
+				<span class="var-name">$plugin</span><span class="var-description">: The plugin to load</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The ID to identify the plugin by if needed</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnewMessage" id="newMessage"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">newMessage</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reset the current message and start a fresh one</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			newMessage
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$msg</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$msg</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodnewRecipientList" id="newRecipientList"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">newRecipientList</span> (line <span class="line-number">272</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Reset the current list of recipients and start a new one</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			newRecipientList
+		</span>
+					([<span class="var-type"></span>&nbsp;<span class="var-name">$list</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$list</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodremovePlugin" id="removePlugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">removePlugin</span> (line <span class="line-number">384</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Remove the plugin identified by $name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			removePlugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The ID of the plugin</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodrequestReadReceipt" id="requestReadReceipt"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">requestReadReceipt</span> (line <span class="line-number">483</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Request for a read recipient to be sent to the reply-to address</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			requestReadReceipt
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$request</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$request</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend" id="send"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">send</span> (line <span class="line-number">922</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Send an email to a number of recipients</p>
+<p class="description"><p>Returns the number of successful recipients, or FALSE on failure</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			send
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$from</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$subject</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$body</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$recipients</span><span class="var-description">: The recipients to send to.  One of string, array, 2-dimensional array or Swift_Address</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$from</span><span class="var-description">: The address to send from. string or Swift_Address</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$subject</span><span class="var-description">: The message subject</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$body</span><span class="var-description">: The message body, optional</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetCharset" id="setCharset"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCharset</span> (line <span class="line-number">685</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the charset of the charset to use in the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			setCharset
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$charset</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$charset</span><span class="var-description">: The charset (e.g. utf-8, iso-8859-1 etc)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetError" id="setError"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setError</span> (line <span class="line-number">123</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set an error message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setError
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$msg</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$msg</span><span class="var-description">: Error message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHeader" id="setHeader"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHeader</span> (line <span class="line-number">897</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set a header in the message</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">see:</span> {addHeaderAttribute}</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHeader
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The name of the header</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: The value of the header (without attributes)</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHeaderAttribute" id="setHeaderAttribute"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHeaderAttribute</span> (line <span class="line-number">908</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set an attribute in the message headers</p>
+<p class="description"><p>For example charset in Content-Type: text/html; charset=utf-8 set by $swift-&gt;setHeaderAttribute(&quot;Content-Type&quot;, &quot;charset&quot;, &quot;utf-8&quot;)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHeaderAttribute
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$attribute</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The name of the header</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$attribute</span><span class="var-description">: The name of the attribute</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$value</span><span class="var-description">: The value of the attribute</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetHeaderEncoding" id="setHeaderEncoding"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setHeaderEncoding</span> (line <span class="line-number">460</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the encoding used in the message header</p>
+<p class="description"><p>The encoding can be one of Q (quoted-printable) or B (base64)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setHeaderEncoding
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$mode</span> = <span class="var-default">&quot;B&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$mode</span><span class="var-description">: The encoding to use</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMaxLogSize" id="setMaxLogSize"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMaxLogSize</span> (line <span class="line-number">164</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the maximum size of the log</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMaxLogSize
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMimeWarning" id="setMimeWarning"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMimeWarning</span> (line <span class="line-number">668</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the multipart MIME warning message (only seen by old clients)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMimeWarning
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: The message to show</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPriority" id="setPriority"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPriority</span> (line <span class="line-number">492</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the message priority</p>
+<p class="description"><p>This is an integer between 1 (high) and 5 (low)</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPriority
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$priority</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$priority</span><span class="var-description">: The level of priority to use</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetReplyTo" id="setReplyTo"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setReplyTo</span> (line <span class="line-number">512</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the reply-to header</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReplyTo
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: The address replies come to. String, or Swift_Address, or an array of either.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetReturnPath" id="setReturnPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setReturnPath</span> (line <span class="line-number">475</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the return path address (where bounces go to)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReturnPath
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$address</span><span class="var-description">: The address as a string or Swift_Address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodstringToAddress" id="stringToAddress"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">stringToAddress</span> (line <span class="line-number">433</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turn a string representation of an email address into a Swift_Address object</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Swift/Swift_Address.html">Swift_Address</a></span>
+		<span class="method-name">
+			stringToAddress
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$string</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$string</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduseAutoLineResizing" id="useAutoLineResizing"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">useAutoLineResizing</span> (line <span class="line-number">183</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Enable line resizing (on 1000 by default)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			useAutoLineResizing
+		</span>
+					([<span class="var-type">int</span>&nbsp;<span class="var-name">$size</span> = <span class="var-default">1000</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$size</span><span class="var-description">: The number of characters allowed on a line</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduseExactCopy" id="useExactCopy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">useExactCopy</span> (line <span class="line-number">209</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This method should be called if you do not wish to send messages in batch mode (i.e. if all recipients should see each others' addresses)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			useExactCopy
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$bool</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$bool</span><span class="var-description">: If this mode should be used</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methoduseLogging" id="useLogging"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">useLogging</span> (line <span class="line-number">173</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turn logging on or off (saves memory)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			useLogging
+		</span>
+					([<span class="var-type">boolean</span>&nbsp;<span class="var-name">$use</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$use</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 26 Mar 2008 20:33:06 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.1</a>
+	</p>
+	</div></body>
+</html>

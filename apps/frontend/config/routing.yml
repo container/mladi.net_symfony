@@ -1,0 +1,28 @@
+# default rules
+list_of_posts:
+  url:   /latest_posts
+  param: { module: post, action: index }
+
+vprasanja_detail:
+  url:   /vprasanja/:id/:naslov
+  param: { module: vprasanje, action: permalink }
+
+novo_vprasanje:
+  url:   /novo_vprasanje
+  param: { module: vprasanje, action: new }
+
+  
+post:
+  url:   /blog/:title
+  param: { module: post, action: permalink }
+  
+homepage:
+  url:   /
+  param: { module: main, action: index }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

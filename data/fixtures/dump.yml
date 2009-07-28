@@ -1,0 +1,32 @@
+BlogPost:
+  BlogPost_1:
+    title: test
+    excerpt: test
+    body: test
+    created_at: '2009-01-21 20:43:26'
+Category:
+  Category_1:
+    naslov: 'kategorija 1'
+    text: 'test 6'
+  Category_2:
+    naslov: 'kategorija 1'
+    text: 'test 6'
+  Category_3:
+    naslov: lupina
+    text: repete
+  Category_4:
+    naslov: ?ubra
+    text: 'šišmevuh žu?inar!'
+Vprasanje:
+  Vprasanje_1_1:
+    category_id: Category_1
+    naslov: test
+    text: šest
+    nickname: mudel
+Svetovalec:
+  Svetovalec_1:
+    nickname: stanko
+    name: stanc
+  Svetovalec_2:
+    nickname: bebec
+    name: ignorant

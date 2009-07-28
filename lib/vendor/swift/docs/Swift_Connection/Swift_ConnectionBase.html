@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Swift_ConnectionBase</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Swift_ConnectionBase</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+							<a href="#sec-descendents">Descendents</a>
+			|											<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+                <p class="implements">
+            Implements interfaces:
+            <ul>
+                <li><a href="../Swift_Connection/Swift_Connection.html">Swift_Connection</a></li>            </ul>
+        </p>
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Swift Connection Base Class</p>
+	<ul class="tags">
+				<li><span class="field">abstract:</span> </li>
+				<li><span class="field">author:</span> Chris Corbyn &lt;<a href="mailto:chris@w3style.co.uk">chris@w3style.co.uk</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Swift---ConnectionBase.php.html">/Swift/ConnectionBase.php</a> (line <span class="field">22</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+	<a name="sec-descendents"></a>
+	<div class="info-box">
+		<div class="info-box-title">Direct descendents</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+			<span class="disabled">Descendents</span>
+			|												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+								|															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<table cellpadding="2" cellspacing="0" class="class-table">
+				<tr>
+					<th class="class-table-header">Class</th>
+					<th class="class-table-header">Description</th>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Swift_Connection/Swift_Connection_Multi.html">Swift_Connection_Multi</a></td>
+					<td>
+											Swift Multi Connection
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Swift_Connection/Swift_Connection_NativeMail.html">Swift_Connection_NativeMail</a></td>
+					<td>
+											Swift mail() Connection  NOTE: This class is nothing more than a stub.  The MailSend plugin does the actual sending.
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Swift_Connection/Swift_Connection_Rotator.html">Swift_Connection_Rotator</a></td>
+					<td>
+											Swift Rotator Connection
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Swift_Connection/Swift_Connection_Sendmail.html">Swift_Connection_Sendmail</a></td>
+					<td>
+											Swift Sendmail Connection
+										</td>
+				</tr>
+								<tr>
+					<td style="padding-right: 2em"><a href="../Swift_Connection/Swift_Connection_SMTP.html">Swift_Connection_SMTP</a></td>
+					<td>
+											Swift SMTP Connection
+										</td>
+				</tr>
+							</table>
+		</div>
+	</div>
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$extensions" title="details" class="var-name">$extensions</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">boolean</span>
+					<a href="#$isESMTP" title="details" class="var-name">$isESMTP</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																				
+												<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getAttributes" title="details" class="method-name">getAttributes</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$extension</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#getRequiresEHLO" title="details" class="method-name">getRequiresEHLO</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#hasExtension" title="details" class="method-name">hasExtension</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#postConnect" title="details" class="method-name">postConnect</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$instance</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setExtension" title="details" class="method-name">setExtension</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRequiresEHLO" title="details" class="method-name">setRequiresEHLO</a>
+											(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$set</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$extensions" id="$extensions"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$extensions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Any extensions the server might support</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$isESMTP" id="$isESMTP"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">boolean</span>
+			<span class="var-name">$isESMTP</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">True if the connection is ESMTP.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+							<a href="#sec-descendents">Descendents</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="methodgetAttributes" id="getAttributes"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getAttributes</span> (line <span class="line-number">68</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the list of attributes supported by the given extension</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The list of attributes</li>
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException If the extension cannot be found</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getAttributes
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$extension</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$extension</span><span class="var-description">: The name of the connection</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodgetAttributes">Swift_Connection::getAttributes()</a></dt>
+						<dd>Get the list of attributes for the extension $name</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Multi.html#methodgetAttributes">Swift_Connection_Multi::getAttributes()</a>
+								: Call the current connection's getAttributes() method
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Rotator.html#methodgetAttributes">Swift_Connection_Rotator::getAttributes()</a>
+								: Call the current connection's getAttributes() method
+							</li>
+				</ul>
+	</div>
+<a name="methodgetRequiresEHLO" id="getRequiresEHLO"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getRequiresEHLO</span> (line <span class="line-number">85</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns TRUE if the connection needs a EHLO greeting.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			getRequiresEHLO
+		</span>
+				()
+			</div>
+	
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodgetRequiresEHLO">Swift_Connection::getRequiresEHLO()</a></dt>
+						<dd>Returns TRUE if the connection needs a EHLO greeting.</dd>
+					</dl>
+			
+	</div>
+<a name="methodhasExtension" id="hasExtension"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">hasExtension</span> (line <span class="line-number">54</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if a given extension has been set as available</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			hasExtension
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The name of the extension</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodhasExtension">Swift_Connection::hasExtension()</a></dt>
+						<dd>Check if an extension exists by the name $name</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Multi.html#methodhasExtension">Swift_Connection_Multi::hasExtension()</a>
+								: Call the current connection's hasExtension() method
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Rotator.html#methodhasExtension">Swift_Connection_Rotator::hasExtension()</a>
+								: Call the current connection's hasExtension() method
+							</li>
+				</ul>
+	</div>
+<a name="methodpostConnect" id="postConnect"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">postConnect</span> (line <span class="line-number">61</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Execute any needed logic after connecting and handshaking</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			postConnect
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$instance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+				<span class="var-name">$instance</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodpostConnect">Swift_Connection::postConnect()</a></dt>
+						<dd>Execute logic needed after SMTP greetings</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Multi.html#methodpostConnect">Swift_Connection_Multi::postConnect()</a>
+								: Call the current connection's postConnect() method
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_NativeMail.html#methodpostConnect">Swift_Connection_NativeMail::postConnect()</a>
+								: Sets the MailSend plugin in Swift once Swift has connected
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Rotator.html#methodpostConnect">Swift_Connection_Rotator::postConnect()</a>
+								: Call the current connection's postConnect() method
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_SMTP.html#methodpostConnect">Swift_Connection_SMTP::postConnect()</a>
+								: Authenticate if required to do so
+							</li>
+				</ul>
+	</div>
+<a name="methodsetExtension" id="setExtension"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setExtension</span> (line <span class="line-number">40</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set an extension which the connection reports to support</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setExtension
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$options</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: Extension name</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$options</span><span class="var-description">: Attributes of the extension</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodsetExtension">Swift_Connection::setExtension()</a></dt>
+						<dd>Add an extension which is available on this connection</dd>
+					</dl>
+			
+			<hr class="separator" />
+		<div class="notes">Redefined in descendants as:</div>
+		<ul class="redefinitions">
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Multi.html#methodsetExtension">Swift_Connection_Multi::setExtension()</a>
+								: Call the current connection's setExtension() method
+							</li>
+					<li>
+				<a href="../Swift_Connection/Swift_Connection_Rotator.html#methodsetExtension">Swift_Connection_Rotator::setExtension()</a>
+								: Call the current connection's setExtension() method
+							</li>
+				</ul>
+	</div>
+<a name="methodsetRequiresEHLO" id="setRequiresEHLO"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRequiresEHLO</span> (line <span class="line-number">93</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set TRUE if the connection needs a EHLO greeting.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRequiresEHLO
+		</span>
+					(<span class="var-type">boolean</span>&nbsp;<span class="var-name">$set</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">boolean</span>
+				<span class="var-name">$set</span>			</li>
+				</ul>
+		
+				<hr class="separator" />
+		<div class="notes">Implementation of:</div>
+			<dl>
+			<dt><a href="../Swift_Connection/Swift_Connection.html#methodsetRequiresEHLO">Swift_Connection::setRequiresEHLO()</a></dt>
+						<dd>Set if the connection needs a EHLO greeting.</dd>
+					</dl>
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 26 Mar 2008 20:33:04 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.1</a>
+	</p>
+	</div></body>
+</html>

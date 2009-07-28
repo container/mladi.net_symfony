@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Swift_Connection_SMTP</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Swift_Connection_SMTP</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+											<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+						
+			</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Swift SMTP Connection</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Chris Corbyn &lt;<a href="mailto:chris@w3style.co.uk">chris@w3style.co.uk</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Swift---Connection---SMTP.php.html">/Swift/Connection/SMTP.php</a> (line <span class="field">20</span>)
+		</p>
+		
+				
+		<pre><a href="../Swift_Connection/Swift_ConnectionBase.html">Swift_ConnectionBase</a>
+   |
+   --Swift_Connection_SMTP</pre>
+	
+			</div>
+</div>
+
+
+	<a name="sec-const-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constant Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Constants</span> (<a href="#sec-consts">details</a>)
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="const-summary">
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#AUTO_DETECT" title="details" class="const-name">AUTO_DETECT</a> = 					<span class="var-type"> -2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ENC_OFF" title="details" class="const-name">ENC_OFF</a> = 					<span class="var-type"> 8</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ENC_SSL" title="details" class="const-name">ENC_SSL</a> = 					<span class="var-type"> 4</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#ENC_TLS" title="details" class="const-name">ENC_TLS</a> = 					<span class="var-type"> 2</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#PORT_DEFAULT" title="details" class="const-name">PORT_DEFAULT</a> = 					<span class="var-type"> 25</span>
+
+				</div>
+								<div class="const-title">
+					<img src="../media/images/Constant.png" alt=" " />
+					<a href="#PORT_SECURE" title="details" class="const-name">PORT_SECURE</a> = 					<span class="var-type"> 465</span>
+
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																																								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$authenticators" title="details" class="var-name">$authenticators</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$encryption" title="details" class="var-name">$encryption</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$errno" title="details" class="var-name">$errno</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$errstr" title="details" class="var-name">$errstr</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">resource</span>
+					<a href="#$handle" title="details" class="var-name">$handle</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$password" title="details" class="var-name">$password</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$port" title="details" class="var-name">$port</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$timeout" title="details" class="var-name">$timeout</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$username" title="details" class="var-name">$username</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																																																																												
+												<div class="method-definition">
+											<span class="method-result">Swift_Connection_SMTP</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">&quot;localhost&quot;</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$encryption</span> = <span class="var-default">null</span>])
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__destruct" title="details" class="method-name">__destruct</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#attachAuthenticator" title="details" class="method-name">attachAuthenticator</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$auth</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getEncryption" title="details" class="method-name">getEncryption</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getPassword" title="details" class="method-name">getPassword</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getPort" title="details" class="method-name">getPort</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getServer" title="details" class="method-name">getServer</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getTimeout" title="details" class="method-name">getTimeout</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#getUsername" title="details" class="method-name">getUsername</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isAlive" title="details" class="method-name">isAlive</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#postConnect" title="details" class="method-name">postConnect</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$instance</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#read" title="details" class="method-name">read</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#runAuthenticators" title="details" class="method-name">runAuthenticators</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$swift</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEncryption" title="details" class="method-name">setEncryption</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$enc</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPassword" title="details" class="method-name">setPassword</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPort" title="details" class="method-name">setPort</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setServer" title="details" class="method-name">setServer</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTimeout" title="details" class="method-name">setTimeout</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$time</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setUsername" title="details" class="method-name">setUsername</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#smtpErrors" title="details" class="method-name">smtpErrors</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#start" title="details" class="method-name">start</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#stop" title="details" class="method-name">stop</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#write" title="details" class="method-name">write</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$command</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$end</span> = <span class="var-default">&quot;\r\n&quot;</span>])
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$authenticators" id="$authenticators"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$authenticators</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">80</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loaded authentication mechanisms</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$encryption" id="$encryption"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$encryption</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">60</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Encryption type to use</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errno" id="$errno"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$errno</span>
+						(line <span class="line-number">85</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fsockopen() error codes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$errstr" id="$errstr"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$errstr</span>
+						(line <span class="line-number">90</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Fsockopen() error codes.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$handle" id="$handle"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">resource</span>
+			<span class="var-name">$handle</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">50</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A connection handle</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$password" id="$password"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$password</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">75</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A password to authenticate with</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$port" id="$port"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$port</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">55</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The remote port number</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$timeout" id="$timeout"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$timeout</span>
+			 = <span class="var-default"> 15</span>			(line <span class="line-number">65</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A connection timeout</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$username" id="$username"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$username</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">70</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A username to authenticate with</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Swift_Connection/Swift_ConnectionBase.html">Swift_ConnectionBase</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#var$extensions">Swift_ConnectionBase::$extensions</a></span><br>
+							</span>
+													<span class="var-title">
+								<span class="var-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#var$isESMTP">Swift_ConnectionBase::$isESMTP</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																			<a href="#sec-const-summary">Constants</a> (<a href="#sec-consts">details</a>)
+							
+										<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">98</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Swift_Connection_SMTP</span>
+		<span class="method-name">
+			__construct
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span> = <span class="var-default">&quot;localhost&quot;</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span> = <span class="var-default">null</span>], [<span class="var-type">int</span>&nbsp;<span class="var-name">$encryption</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: The remote server to connect to</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$port</span><span class="var-description">: The remote port to connect to</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$encryption</span><span class="var-description">: The encryption level to use</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="method__destruct" id="__destruct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Destructor __destruct</span> (line <span class="line-number">448</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Destructor.</p>
+<p class="description"><p>Cleans up any open connections.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__destruct
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodattachAuthenticator" id="attachAuthenticator"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">attachAuthenticator</span> (line <span class="line-number">200</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Add an authentication mechanism to authenticate with</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			attachAuthenticator
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$auth</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Authenticator/Swift_Authenticator.html">Swift_Authenticator</a></span>
+				<span class="var-name">$auth</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodgetEncryption" id="getEncryption"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEncryption</span> (line <span class="line-number">226</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the current encryption level used</p>
+<p class="description"><p>This method returns an integer corresponding to one of the constants ENC_TLS, ENC_SSL or ENC_OFF</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getEncryption
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPassword" id="getPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPassword</span> (line <span class="line-number">192</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the password for authentication</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getPassword
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetPort" id="getPort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPort</span> (line <span class="line-number">158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the remote port number currently used to connect</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getPort
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetServer" id="getServer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getServer</span> (line <span class="line-number">137</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the remote server name</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getServer
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetTimeout" id="getTimeout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getTimeout</span> (line <span class="line-number">116</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the timeout currently set for connecting</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getTimeout
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetUsername" id="getUsername"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getUsername</span> (line <span class="line-number">175</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the username for authentication</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			getUsername
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodisAlive" id="isAlive"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">isAlive</span> (line <span class="line-number">440</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Check if the SMTP connection is alive</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isAlive
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodpostConnect" id="postConnect"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">postConnect</span> (line <span class="line-number">327</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Authenticate if required to do so</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException If authentication fails</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			postConnect
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$instance</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+				<span class="var-name">$instance</span><span class="var-description">: An instance of Swift</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Swift_Connection/Swift_ConnectionBase.html#methodpostConnect">Swift_ConnectionBase::postConnect()</a></dt>
+						<dd>Execute any needed logic after connecting and handshaking</dd>
+					</dl>
+			
+	</div>
+<a name="methodread" id="read"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">read</span> (line <span class="line-number">237</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Read a full response from the buffer</p>
+<p class="description"><p>inner !feof() patch provided by Christian Rodriguez:  &lt;a href=&quot;http://www.flyspray.org/&quot;&gt;www.flyspray.org&lt;/a&gt;</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException Upon failure to read</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			read
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrunAuthenticators" id="runAuthenticators"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">runAuthenticators</span> (line <span class="line-number">342</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Run each authenticator in turn an try for a successful login</p>
+<p class="description"><p>If none works, throw an exception</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException Upon failure to authenticate</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			runAuthenticators
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>, <span class="var-type"></span>&nbsp;<span class="var-name">$swift</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: Username</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pass</span><span class="var-description">: Password</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+				<span class="var-name">$swift</span><span class="var-description">: An instance of swift</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetEncryption" id="setEncryption"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEncryption</span> (line <span class="line-number">216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the encryption level to use on the connection</p>
+<p class="description"><p>See the constants ENC_TLS, ENC_SSL and ENC_OFF  NOTE: PHP needs to have been compiled with OpenSSL for SSL and TLS to work  NOTE: Some PHP installations will not have the TLS stream wrapper</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEncryption
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$enc</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$enc</span><span class="var-description">: Level of encryption</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPassword" id="setPassword"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPassword</span> (line <span class="line-number">183</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the password for SMTP authentication</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPassword
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$pass</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$pass</span><span class="var-description">: Password to use</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetPort" id="setPort"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPort</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the remote port number to connect to</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPort
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$port</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$port</span><span class="var-description">: Port number</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetServer" id="setServer"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setServer</span> (line <span class="line-number">124</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the remote server to connect to as a FQDN</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setServer
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$server</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$server</span><span class="var-description">: Server name</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetTimeout" id="setTimeout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTimeout</span> (line <span class="line-number">108</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the timeout to connect in seconds</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTimeout
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$time</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$time</span><span class="var-description">: Timeout to use</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetUsername" id="setUsername"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setUsername</span> (line <span class="line-number">166</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provide a username for authentication</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setUsername
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$user</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$user</span><span class="var-description">: The username</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsmtpErrors" id="smtpErrors"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">smtpErrors</span> (line <span class="line-number">318</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the smtp error string as recorded by fsockopen()</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			smtpErrors
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstart" id="start"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">start</span> (line <span class="line-number">276</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Try to start the connection</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException Upon failure to start</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			start
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodstop" id="stop"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">stop</span> (line <span class="line-number">420</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Try to close the connection</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException Upon failure to close</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			stop
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodwrite" id="write"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">write</span> (line <span class="line-number">265</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Write a command to the server (leave off trailing CRLF)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+				<li><span class="field">throws:</span> Swift_ConnectionException Upon failure to write</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			write
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$command</span>, [<span class="var-type"></span>&nbsp;<span class="var-name">$end</span> = <span class="var-default">&quot;\r\n&quot;</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$command</span><span class="var-description">: The command to send</span>			</li>
+					<li>
+				<span class="var-type"></span>
+				<span class="var-name">$end</span>			</li>
+				</ul>
+		
+			
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Swift_Connection/Swift_ConnectionBase.html">Swift_ConnectionBase</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodgetAttributes">Swift_ConnectionBase::getAttributes()</a></span><br>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodgetRequiresEHLO">Swift_ConnectionBase::getRequiresEHLO()</a></span><br>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodhasExtension">Swift_ConnectionBase::hasExtension()</a></span><br>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodpostConnect">Swift_ConnectionBase::postConnect()</a></span><br>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodsetExtension">Swift_ConnectionBase::setExtension()</a></span><br>
+													<span class="method-name"><a href="../Swift_Connection/Swift_ConnectionBase.html#methodsetRequiresEHLO">Swift_ConnectionBase::setRequiresEHLO()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+	<a name="sec-consts"></a>
+	<div class="info-box">
+		<div class="info-box-title">Class Constants</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Constants</a> (<span class="disabled">details</span>)
+						
+			
+												<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+														| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="constAUTO_DETECT" id="AUTO_DETECT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">AUTO_DETECT</span>
+			 = <span class="const-default"> -2</span>
+			(line <span class="line-number">45</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for auto-detection of paramters</p>
+	
+	
+</div>
+<a name="constENC_OFF" id="ENC_OFF"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ENC_OFF</span>
+			 = <span class="const-default"> 8</span>
+			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for unencrypted connections</p>
+	
+	
+</div>
+<a name="constENC_SSL" id="ENC_SSL"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ENC_SSL</span>
+			 = <span class="const-default"> 4</span>
+			(line <span class="line-number">29</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for SSL connections</p>
+	
+	
+</div>
+<a name="constENC_TLS" id="ENC_TLS"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">ENC_TLS</span>
+			 = <span class="const-default"> 2</span>
+			(line <span class="line-number">25</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for TLS connections</p>
+	
+	
+</div>
+<a name="constPORT_DEFAULT" id="PORT_DEFAULT"><!-- --></A>
+<div class="evenrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">PORT_DEFAULT</span>
+			 = <span class="const-default"> 25</span>
+			(line <span class="line-number">37</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for the default SMTP port</p>
+	
+	
+</div>
+<a name="constPORT_SECURE" id="PORT_SECURE"><!-- --></A>
+<div class="oddrow">
+
+	<div class="const-header">
+		<img src="../media/images/Variable.png" />
+		<span class="const-title">
+			<span class="const-name">PORT_SECURE</span>
+			 = <span class="const-default"> 465</span>
+			(line <span class="line-number">41</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constant for the default secure SMTP port</p>
+	
+	
+</div>
+						
+		</div>
+	</div>
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 26 Mar 2008 20:33:11 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.1</a>
+	</p>
+	</div></body>
+</html>

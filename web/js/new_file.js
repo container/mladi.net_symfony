@@ -1,0 +1,4 @@
+/**
+ * @author danijel
+ */
+alert('ha!');

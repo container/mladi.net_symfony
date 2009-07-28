@@ -1,0 +1,30 @@
+digraph G {
+nodeblog_post [label="{<table>blog_post|<cols>id (INTEGER) [PK]\ltitle (VARCHAR)\lexcerpt (LONGVARCHAR)\lbody (LONGVARCHAR)\lcreated_at (TIMESTAMP)\l}", shape=record];
+nodeblog_comment [label="{<table>blog_comment|<cols>id (INTEGER) [PK]\lblog_post_id (INTEGER) [FK]\lauthor (VARCHAR)\lemail (VARCHAR)\lbody (LONGVARCHAR)\lcreated_at (TIMESTAMP)\l}", shape=record];
+nodevprasanje [label="{<table>vprasanje|<cols>id (INTEGER) [PK]\lcategory_id (INTEGER) [FK]\lnaslov (VARCHAR)\ltext (VARCHAR)\lnickname (VARCHAR)\lcreated_at (TIMESTAMP)\l}", shape=record];
+nodeodgovor [label="{<table>odgovor|<cols>id (INTEGER) [PK]\lvprasanje_id (INTEGER) [FK]\lsvetovalec_id (INTEGER) [FK]\lnaslov (VARCHAR)\ltext (VARCHAR)\l}", shape=record];
+nodecategory [label="{<table>category|<cols>id (INTEGER) [PK]\lnaslov (VARCHAR)\ltext (VARCHAR)\l}", shape=record];
+nodesvetovalec [label="{<table>svetovalec|<cols>id (INTEGER) [PK]\lnickname (VARCHAR)\lname (VARCHAR)\l}", shape=record];
+nodesvetovalec_category [label="{<table>svetovalec_category|<cols>svetovalec (INTEGER) [FK]\lcategory (INTEGER) [FK]\l}", shape=record];
+nodesf_guard_group [label="{<table>sf_guard_group|<cols>id (INTEGER) [PK]\lname (VARCHAR)\ldescription (LONGVARCHAR)\l}", shape=record];
+nodesf_guard_permission [label="{<table>sf_guard_permission|<cols>id (INTEGER) [PK]\lname (VARCHAR)\ldescription (LONGVARCHAR)\l}", shape=record];
+nodesf_guard_group_permission [label="{<table>sf_guard_group_permission|<cols>group_id (INTEGER) [FK]\lpermission_id (INTEGER) [FK]\l}", shape=record];
+nodesf_guard_user [label="{<table>sf_guard_user|<cols>id (INTEGER) [PK]\lusername (VARCHAR)\lalgorithm (VARCHAR)\lsalt (VARCHAR)\lpassword (VARCHAR)\lcreated_at (TIMESTAMP)\llast_login (TIMESTAMP)\lis_active (BOOLEAN)\lis_super_admin (BOOLEAN)\l}", shape=record];
+nodesf_guard_user_permission [label="{<table>sf_guard_user_permission|<cols>user_id (INTEGER) [FK]\lpermission_id (INTEGER) [FK]\l}", shape=record];
+nodesf_guard_user_group [label="{<table>sf_guard_user_group|<cols>user_id (INTEGER) [FK]\lgroup_id (INTEGER) [FK]\l}", shape=record];
+nodesf_guard_remember_key [label="{<table>sf_guard_remember_key|<cols>user_id (INTEGER) [FK]\lremember_key (VARCHAR)\lip_address (VARCHAR) [PK]\lcreated_at (TIMESTAMP)\l}", shape=record];
+
+nodeblog_comment:cols -> nodeblog_post:table [label="blog_post_id=id "];
+nodevprasanje:cols -> nodecategory:table [label="category_id=id "];
+nodeodgovor:cols -> nodevprasanje:table [label="vprasanje_id=id "];
+nodeodgovor:cols -> nodesvetovalec:table [label="svetovalec_id=id "];
+nodesvetovalec_category:cols -> nodesvetovalec:table [label="svetovalec=id "];
+nodesvetovalec_category:cols -> nodecategory:table [label="category=id "];
+nodesf_guard_group_permission:cols -> nodesf_guard_group:table [label="group_id=id "];
+nodesf_guard_group_permission:cols -> nodesf_guard_permission:table [label="permission_id=id "];
+nodesf_guard_user_permission:cols -> nodesf_guard_user:table [label="user_id=id "];
+nodesf_guard_user_permission:cols -> nodesf_guard_permission:table [label="permission_id=id "];
+nodesf_guard_user_group:cols -> nodesf_guard_user:table [label="user_id=id "];
+nodesf_guard_user_group:cols -> nodesf_guard_group:table [label="group_id=id "];
+nodesf_guard_remember_key:cols -> nodesf_guard_user:table [label="user_id=id "];
+}

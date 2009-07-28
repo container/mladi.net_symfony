@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Swift_BatchMailer</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Swift_BatchMailer</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Handles batch mailing with Swift Mailer with fail-safe support.</p>
+<p class="description"><p>Restarts the connection if it dies and then continues where it left off.  Please read the LICENSE file</p></p>
+	<ul class="tags">
+				<li><span class="field">license:</span> GNU</li>
+				<li><span class="field">author:</span> Chris Corbyn &lt;<a href="mailto:chris@w3style.co.uk">chris@w3style.co.uk</a>&gt;</li>
+				<li><span class="field">copyright:</span> Chris Corbyn &lt;chris@w3style.co.uk&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Swift---BatchMailer.php.html">/Swift/BatchMailer.php</a> (line <span class="field">12</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+																																																																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$failed" title="details" class="var-name">$failed</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$headers" title="details" class="var-name">$headers</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$maxFails" title="details" class="var-name">$maxFails</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$maxTries" title="details" class="var-name">$maxTries</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$sleepTime" title="details" class="var-name">$sleepTime</a>
+				</div>
+																<div class="var-title">
+					<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+					<a href="#$swift" title="details" class="var-name">$swift</a>
+				</div>
+											</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+																																																																																																																																				
+												<div class="method-definition">
+											<span class="method-result">Swift_BatchMailer</span>
+										<a href="#__construct" title="details" class="method-name">__construct</a>
+											(<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>&nbsp;<span class="var-name">$swift</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addFailedRecipient" title="details" class="method-name">addFailedRecipient</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#copyMessageHeaders" title="details" class="method-name">copyMessageHeaders</a>
+											(<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>&nbsp;<span class="var-name">&$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#flushFailedRecipients" title="details" class="method-name">flushFailedRecipients</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#forceRestartSwift" title="details" class="method-name">forceRestartSwift</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getFailedRecipients" title="details" class="method-name">getFailedRecipients</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getMaxSuccessiveFailures" title="details" class="method-name">getMaxSuccessiveFailures</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getMaxTries" title="details" class="method-name">getMaxTries</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#getSleepTime" title="details" class="method-name">getSleepTime</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result"><a href="../Swift/Swift.html">Swift</a></span>
+										<a href="#getSwift" title="details" class="method-name">getSwift</a>
+										()
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#restoreMessageHeaders" title="details" class="method-name">restoreMessageHeaders</a>
+											(<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>&nbsp;<span class="var-name">&$message</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">int</span>
+										<a href="#send" title="details" class="method-name">send</a>
+											(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"><a href="../Swift/Swift_RecipientList.html">Swift_RecipientList</a></span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type"><a href="../Swift/Swift_Address.html">Swift_Address</a></span>&nbsp;<span class="var-name">$sender</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMaxSuccessiveFailures" title="details" class="method-name">setMaxSuccessiveFailures</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$fails</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setMaxTries" title="details" class="method-name">setMaxTries</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSleepTime" title="details" class="method-name">setSleepTime</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$secs</span>)
+									</div>
+																<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setSwift" title="details" class="method-name">setSwift</a>
+											(<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>&nbsp;<span class="var-name">$swift</span>)
+									</div>
+								</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$failed" id="$failed"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$failed</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">33</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Failed recipients (undeliverable)</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$headers" id="$headers"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$headers</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">43</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A temporary copy of some message headers.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$maxFails" id="$maxFails"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$maxFails</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">38</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The maximum number of successive failures before giving up.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$maxTries" id="$maxTries"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$maxTries</span>
+			 = <span class="var-default"> 2</span>			(line <span class="line-number">23</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The maximum number of times a single recipient can be attempted before giving up.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$sleepTime" id="$sleepTime"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$sleepTime</span>
+			 = <span class="var-default"> 0</span>			(line <span class="line-number">28</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of seconds to sleep for if an error occurs.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$swift" id="$swift"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+			<span class="var-name">$swift</span>
+						(line <span class="line-number">18</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The current instance of Swift.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+
+<a name="method__construct" id="__construct"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor __construct</span> (line <span class="line-number">49</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Swift_BatchMailer</span>
+		<span class="method-name">
+			__construct
+		</span>
+					(<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>&nbsp;<span class="var-name">$swift</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+				<span class="var-name">$swift</span><span class="var-description">: The current instance of Swift</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodaddFailedRecipient" id="addFailedRecipient"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addFailedRecipient</span> (line <span class="line-number">105</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Log a failed recipient.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addFailedRecipient
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$address</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$address</span><span class="var-description">: The email address.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodcopyMessageHeaders" id="copyMessageHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">copyMessageHeaders</span> (line <span class="line-number">158</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Takes a temporary copy of original message headers in case an error occurs and they need restoring.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			copyMessageHeaders
+		</span>
+					(<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>&nbsp;<span class="var-name">&$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>
+				<span class="var-name">&$message</span><span class="var-description">: The message object</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodflushFailedRecipients" id="flushFailedRecipients"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">flushFailedRecipients</span> (line <span class="line-number">121</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clear out the list of failed recipients.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			flushFailedRecipients
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodforceRestartSwift" id="forceRestartSwift"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">forceRestartSwift</span> (line <span class="line-number">145</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Restarts Swift forcibly.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			forceRestartSwift
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetFailedRecipients" id="getFailedRecipients"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getFailedRecipients</span> (line <span class="line-number">114</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get all recipients which failed in this batch.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getFailedRecipients
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMaxSuccessiveFailures" id="getMaxSuccessiveFailures"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMaxSuccessiveFailures</span> (line <span class="line-number">138</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the maximum number of times an error can be thrown and still be hidden.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getMaxSuccessiveFailures
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetMaxTries" id="getMaxTries"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getMaxTries</span> (line <span class="line-number">81</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the number of times a single address will be attempted in a batch.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getMaxTries
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSleepTime" id="getSleepTime"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSleepTime</span> (line <span class="line-number">97</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the amount of time to sleep for on errors.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			getSleepTime
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodgetSwift" id="getSwift"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getSwift</span> (line <span class="line-number">65</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Get the Swift instance which is running.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result"><a href="../Swift/Swift.html">Swift</a></span>
+		<span class="method-name">
+			getSwift
+		</span>
+				()
+			</div>
+	
+		
+			
+	</div>
+<a name="methodrestoreMessageHeaders" id="restoreMessageHeaders"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">restoreMessageHeaders</span> (line <span class="line-number">173</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Restore message headers to original values in the event of a failure.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			restoreMessageHeaders
+		</span>
+					(<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>&nbsp;<span class="var-name">&$message</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>
+				<span class="var-name">&$message</span><span class="var-description">: The message</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsend" id="send"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">send</span> (line <span class="line-number">188</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Run a batch send in a fail-safe manner.</p>
+<p class="description"><p>This operates as Swift::batchSend() except it deals with errors itself.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The number sent to</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">int</span>
+		<span class="method-name">
+			send
+		</span>
+					(<span class="var-type"></span>&nbsp;<span class="var-name">$message</span>, <span class="var-type"><a href="../Swift/Swift_RecipientList.html">Swift_RecipientList</a></span>&nbsp;<span class="var-name">$recipients</span>, <span class="var-type"><a href="../Swift/Swift_Address.html">Swift_Address</a></span>&nbsp;<span class="var-name">$sender</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift_Message/Swift_Message.html">Swift_Message</a></span>
+				<span class="var-name">$message</span><span class="var-description">: To send</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Swift/Swift_RecipientList.html">Swift_RecipientList</a></span>
+				<span class="var-name">$recipients</span><span class="var-description">: Recipients (To: only)</span>			</li>
+					<li>
+				<span class="var-type"><a href="../Swift/Swift_Address.html">Swift_Address</a></span>
+				<span class="var-name">$sender</span><span class="var-description">: The sender's address</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMaxSuccessiveFailures" id="setMaxSuccessiveFailures"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMaxSuccessiveFailures</span> (line <span class="line-number">130</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the maximum number of times an error can be thrown in succession and still be hidden.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMaxSuccessiveFailures
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$fails</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$fails</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetMaxTries" id="setMaxTries"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setMaxTries</span> (line <span class="line-number">73</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the maximum number of times a single address is allowed to be retried.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setMaxTries
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$max</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$max</span><span class="var-description">: The maximum number of tries.</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSleepTime" id="setSleepTime"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSleepTime</span> (line <span class="line-number">89</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the amount of time to sleep for if an error occurs.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSleepTime
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$secs</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$secs</span><span class="var-description">: Number of seconds</span>			</li>
+				</ul>
+		
+			
+	</div>
+<a name="methodsetSwift" id="setSwift"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setSwift</span> (line <span class="line-number">57</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Set the current Swift instance.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setSwift
+		</span>
+					(<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>&nbsp;<span class="var-name">$swift</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type"><a href="../Swift/Swift.html">Swift</a></span>
+				<span class="var-name">$swift</span><span class="var-description">: The instance</span>			</li>
+				</ul>
+		
+			
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Wed, 26 Mar 2008 20:33:03 +1100 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.1</a>
+	</p>
+	</div></body>
+</html>
