@@ -1,0 +1,8 @@
+Kako commitam? 
+
+cd c:/webroot/mladi.net_symfony
+git add *
+git commit -m 'moj message'
+git push origin master
+
+to mogoče ni najbolj učinkovita metoda, ampak to je to kar znam zaenkrat :)
