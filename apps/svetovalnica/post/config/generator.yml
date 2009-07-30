@@ -1,0 +1,27 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      BlogPost
+    theme:            default
+    fields:
+      title:          { name: Title }
+      excerpt:        { name: Excerpt }
+      body:           { name: Body }
+      nb_comments:    { name: Comments }
+      created_at:     { name: Creation date }
+    list:
+      title:          Post list
+      layout:         tabular
+      display:        [=title, excerpt, nb_comments, created_at]
+      object_actions:
+        _edit:        ~
+        _delete:      ~
+      max_per_page:   5
+      filters:        [title, created_at]
+    edit:
+      title:          Post detail
+      fields:
+        title:        { type: input_tag, params: size=53 }
+        excerpt:      { type: textarea_tag, params: size=50x2 }
+        body:         { type: textarea_tag, params: size=50x10 }
+        created_at:   { type: input_date_tag, params: rich=on }
