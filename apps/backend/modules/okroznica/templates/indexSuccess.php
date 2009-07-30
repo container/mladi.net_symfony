@@ -1,0 +1,1 @@
+vmesnik za mailing listo

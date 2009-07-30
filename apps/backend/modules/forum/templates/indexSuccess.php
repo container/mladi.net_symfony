@@ -1,0 +1,1 @@
+Hmm PHP bb ima svoj backend. Se ga bo dalo vključit tuki? 

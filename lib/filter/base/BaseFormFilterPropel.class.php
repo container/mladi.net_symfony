@@ -3,9 +3,9 @@
 /**
  * Project filter form base class.
  *
- * @package    sf_sandbox
+ * @package    svetovalnica
  * @subpackage filter
- * @author     Your name here
+ * @author     DanijelK <danijel.kurincic@gmail.com>
  * @version    SVN: $Id: sfPropelFormFilterBaseTemplate.php 11675 2008-09-19 15:21:38Z fabien $
  */
 abstract class BaseFormFilterPropel extends sfFormFilterPropel

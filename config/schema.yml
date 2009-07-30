@@ -1,56 +1,25 @@
 propel:
-  blog_post:
+  clanek:
     id:           ~
     title:        { type: varchar(255), required: true }
     excerpt:      { type: longvarchar }
     body:         { type: longvarchar }
     created_at:   ~
+    updated_at:   ~
+    user_id:   ~
 
-  blog_comment:
+  komentar:
     id:           ~
-    blog_post_id: ~
+    clanek_id : ~
     author:       { type: varchar(255) }
     email:        { type: varchar(255) }
     body:         { type: longvarchar }
     created_at:   ~
 
-  vprasanje:
+  user:
     id:           ~
-    naslov:       { type: varchar(255) }
-    text:         { type: varchar(255) }
-    nickname:     { type: varchar(255) }
-    created_at:   ~
-
-  odgovor:
-    id:           ~
-    vprasanje_id:  { type: integer, foreignTable: vprasanje, foreignReference: id}
-    svetovalec_id: { type: integer, foreignTable: svetovalec, foreignReference: id}
-    naslov:       { type: varchar(255) }
-    text:         { type: varchar(255) }
-
-  category:
-    id:           ~
-    naslov:       { type: varchar(255) }
-    text:         { type: varchar(255) }
-
-  svetovalec:
-    id:           ~
-#    sf_user:      { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
+#   sf_user:      { type: integer, primaryKey: true, required: true, foreignTable: sf_guard_user, foreignReference: id, onDelete: cascade}
     nickname:     { type: varchar(255) }
     name:         { type: varchar(255) }
-
-  vprasanje_category:
-    vprasanje:         { type: integer, primaryKey: true, required: true, foreignTable: vprasanje, foreignReference: id}
-    category:          { type: integer, primaryKey: true, required: true, foreignTable: category, foreignReference: id}      
-  svetovalec_category:
-    svetovalec:         { type: integer, primaryKey: true, required: true, foreignTable: svetovalec, foreignReference: id}
-    category:          { type: integer, primaryKey: true, required: true, foreignTable: category, foreignReference: id}   
-
-  tags:
-    name:         { type: varchar(255), required: true, primaryKey: true}
-    vprasanje_id: { type: integer, primaryKey: true,  required: true, foreignTable: vprasanje, foreignReference: id}
-  
-  notifications:
-    id: ~
-    odgovor_id: ~
-    email: { type: varchar(255), required: false, primaryKey: true}
+    email:         { type: varchar(255) }
+    password: { type: varchar(255) }

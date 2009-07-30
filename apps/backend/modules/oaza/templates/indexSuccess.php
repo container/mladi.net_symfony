@@ -1,0 +1,1 @@
+kva je pa to pa tud ne vem!

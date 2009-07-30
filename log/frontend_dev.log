@@ -17026,3 +17026,88 @@ Jul 09 16:40:47 symfony [info] {sfWebDebugLogger} Partial "vprasanje/_form" 102.
 Jul 09 16:40:47 symfony [info] {sfWebDebugLogger} Partial "main/_tagcloud" 1.34 ms (1)
 Jul 09 16:40:47 symfony [info] {sfWebDebugLogger} Partial "main/_cats" 1.31 ms (1)
 Jul 09 16:40:47 symfony [info] {sfWebResponse} Send content (34560 o)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "list_of_posts" (/latest_posts)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "vprasanja_detail" (/vprasanja/:id/:naslov)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "novo_vprasanje" (/novo_vprasanje)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "post" (/blog/:title)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_image" (/phpcaptcha/image)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_audio" (/phpcaptcha/audio)
+Jul 28 17:02:16 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jul 28 17:02:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 28 17:02:17 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 28 17:02:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 28 17:02:17 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jul 28 17:02:17 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Jul 28 17:02:17 symfony [debug] {sfPropelLogger} prepare: SELECT vprasanje.ID, vprasanje.NASLOV, vprasanje.TEXT, vprasanje.NICKNAME, vprasanje.CREATED_AT FROM `vprasanje`
+Jul 28 17:02:17 symfony [debug] {sfPropelLogger} prepare: SELECT category.ID, category.NASLOV, category.TEXT FROM `category`
+Jul 28 17:02:17 symfony [debug] {sfPropelLogger} prepare: SELECT tags.NAME, tags.VPRASANJE_ID FROM `tags`
+Jul 28 17:02:17 symfony [info] {sfPHPView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/indexSuccess.php"
+Jul 28 17:02:17 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/vprasanje/templates/_form.php"
+Jul 28 17:02:17 symfony [debug] {sfPropelLogger} prepare: SELECT category.ID, category.NASLOV, category.TEXT FROM `category`
+Jul 28 17:02:17 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/_tagcloud.php"
+Jul 28 17:02:17 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/_cats.php"
+Jul 28 17:02:17 symfony [info] {sfPHPView} Decorate content with "C:\NETbuild\mladi.net_symfony\apps\frontend\templates/layout.php"
+Jul 28 17:02:17 symfony [info] {sfPHPView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\templates/layout.php"
+Jul 28 17:02:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 28 17:02:17 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} Configuration 54.99 ms (9)
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} Action "main/index" 59.44 ms (1)
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 71.36 ms (1)
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} Partial "vprasanje/_form" 23.41 ms (1)
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} Partial "main/_tagcloud" 0.47 ms (1)
+Jul 28 17:02:17 symfony [info] {sfWebDebugLogger} Partial "main/_cats" 1.46 ms (1)
+Jul 28 17:02:17 symfony [info] {sfWebResponse} Send content (34621 o)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "list_of_posts" (/latest_posts)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "vprasanja_detail" (/vprasanja/:id/:naslov)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "novo_vprasanje" (/novo_vprasanje)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "post" (/blog/:title)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_image" (/phpcaptcha/image)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_audio" (/phpcaptcha/audio)
+Jul 28 17:02:43 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /vprasanje with parameters array (  'module' => 'vprasanje',  'action' => 'index',)
+Jul 28 17:02:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 28 17:02:43 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 28 17:02:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 28 17:02:43 symfony [info] {vprasanjeActions} Call "vprasanjeActions->executeIndex()"
+Jul 28 17:02:43 symfony [err] {sfConfigurationException} The component does not exist: "mail", "mailBody".
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "list_of_posts" (/latest_posts)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "vprasanja_detail" (/vprasanja/:id/:naslov)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "novo_vprasanje" (/novo_vprasanje)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "post" (/blog/:title)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "homepage" (/)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "default_index" (/:module)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "default" (/:module/:action/*)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_image" (/phpcaptcha/image)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Connect sfRoute "phpcaptcha_audio" (/phpcaptcha/audio)
+Jul 29 22:02:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+Jul 29 22:02:58 symfony [info] {myUser} Automatic user logout due to timeout
+Jul 29 22:02:58 symfony [info] {myUser} User is not authenticated
+Jul 29 22:02:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jul 29 22:02:58 symfony [info] {sfFilterChain} Executing filter "sfCommonFilter"
+Jul 29 22:02:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jul 29 22:02:58 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+Jul 29 22:02:59 symfony [debug] {sfPropelLogger} exec: SET NAMES 'utf8'
+Jul 29 22:02:59 symfony [debug] {sfPropelLogger} prepare: SELECT vprasanje.ID, vprasanje.NASLOV, vprasanje.TEXT, vprasanje.NICKNAME, vprasanje.CREATED_AT FROM `vprasanje`
+Jul 29 22:02:59 symfony [debug] {sfPropelLogger} prepare: SELECT category.ID, category.NASLOV, category.TEXT FROM `category`
+Jul 29 22:02:59 symfony [debug] {sfPropelLogger} prepare: SELECT tags.NAME, tags.VPRASANJE_ID FROM `tags`
+Jul 29 22:02:59 symfony [info] {sfPHPView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/indexSuccess.php"
+Jul 29 22:02:59 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/vprasanje/templates/_form.php"
+Jul 29 22:02:59 symfony [debug] {sfPropelLogger} prepare: SELECT category.ID, category.NASLOV, category.TEXT FROM `category`
+Jul 29 22:02:59 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/_tagcloud.php"
+Jul 29 22:02:59 symfony [info] {sfPartialView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\modules/main/templates/_cats.php"
+Jul 29 22:02:59 symfony [info] {sfPHPView} Decorate content with "C:\NETbuild\mladi.net_symfony\apps\frontend\templates/layout.php"
+Jul 29 22:02:59 symfony [info] {sfPHPView} Render "C:\NETbuild\mladi.net_symfony\apps\frontend\templates/layout.php"
+Jul 29 22:02:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jul 29 22:02:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} Configuration 89.52 ms (9)
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} Action "main/index" 439.55 ms (1)
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 354.33 ms (1)
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} Partial "vprasanje/_form" 103.79 ms (1)
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} Partial "main/_tagcloud" 1.60 ms (1)
+Jul 29 22:02:59 symfony [info] {sfWebDebugLogger} Partial "main/_cats" 1.27 ms (1)
+Jul 29 22:02:59 symfony [info] {sfWebResponse} Send content (35308 o)

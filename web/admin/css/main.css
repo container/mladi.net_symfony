@@ -1,0 +1,46 @@
+/* copyright Glasbapomeri.com */
+
+* {margin:0; padding:0;}
+html {height:100%;}
+body { height:100%; width:100%; margin:0; font-size:62.5%; background:white; font-family: Helvetica, sans-serif;}
+a{color:#000;}
+
+#container{width: 800px; margin-left:auto; margin-right:auto; border:1px gray solid;}
+
+#mainmenu{font-size: 3em;}
+#mainmenu ul{list-style: none; margin: 0px; padding: 0px;  }
+#mainmenu li{ float: left;  background-color: yellow; }
+#mainmenu a{ padding: 5px 10px; text-decoration: none; display: block;}
+#mainmenu a:hover, #mainmenu .selected{background-color: red; color: white;}
+
+#header-pic{width: 800px; height: 280px; background: #f2f2f2 url(../images/front/header.png) no-repeat left top;}
+
+#left{ margin 5px; padding: 5px; float:left; width: 300px; border:1px solid gray;}
+#right{margin 5px; padding: 5px; float:left; width: 450px;}
+
+.home-testimonial-body{font-size:2em;}
+.home-testimonial-title{font-size:2em; text-align: right;}
+
+#home-latest{}
+.teaser-envelope{margin: 5px; padding: 5px; background-color: black; color: white; }
+#home-links{margin: 0px; padding: 10px;  border:1px solid red; font-size: 1.2em; }
+#home-links ul{list-style:none; padding:none; margin: none;}
+#home-links a{color: red;}
+#home-links a:hover{color: black;}
+
+.submenu{list-style: none; margin: 0px; padding: 0px;  }
+.submenu a{  }
+
+#glasba-left{float:left; width: 500px;}
+#glasba-right{float:right; width: 200px;}
+.glasba-box{margin: 5px; padding:5px; display: block; border: #E0E0E0 1px solid; }
+#glasba-welcome{padding: 15px; border: green 2px solid; font-size: 1.6em;}
+.glasba-object{margin-bottom: 20px; border-top: 1px solid red; }
+.glasba-object h2{font-size:2em;}
+.glasba-object p{font-size:1.2em; line-height: 1.6em; }
+.glasba-object-dropdown{margin-left:20px; padding: 10px;  background: #E0E0E0; border: 1px solid gray;}
+.glasba-object-dropdown-close{display:block; float:right; background: #FFFFCC; padding: 5px; border: 1px solid red; }
+
+.selected{font-weight:bold;}
+.clear{clear:both;}
+.hidden{display:none;}
